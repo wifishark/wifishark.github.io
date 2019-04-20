@@ -24,6 +24,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link rel="stylesheet" href="/lib/pace/pace-theme-corner-indicator.min.css?v=1.0.2">
+
 
 
 
@@ -140,17 +147,14 @@
 
 
 
-  <meta name="description" content="爱Jessica！！！！！">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
 <meta property="og:url" content="https://836903440.github.io/tags/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="爱Jessica！！！！！">
+<meta property="og:site_name" content="Divine">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-04-20T05:14:02.528Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="爱Jessica！！！！！">
 
 
 
@@ -168,7 +172,7 @@
   };
 </script>
 
-  <title>tags | Hexo</title>
+  <title>tags | Divine</title>
   
 
 
@@ -227,7 +231,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Hexo</span>
+        <span class="site-title">Divine</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -418,6 +422,13 @@
           
 
   
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
 
 
 
@@ -447,7 +458,7 @@
               <img class="site-author-image" itemprop="image" src="/images/jessica.jpg" alt="Divine">
             
               <p class="site-author-name" itemprop="name">Divine</p>
-              <div class="site-description motion-element" itemprop="description">爱Jessica！！！！！</div>
+              <div class="site-description motion-element" itemprop="description"></div>
           </div>
 
           
@@ -457,14 +468,40 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
               
             </nav>
           
@@ -474,10 +511,51 @@
           
 
           
-
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/836903440" title="GitHub &rarr; https://github.com/836903440" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
           
 
           
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-dollar"></i>
+                链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://blog.leanote.com/cokeku" title="http://blog.leanote.com/cokeku" rel="noopener" target="_blank">浩哥</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/www.wujinyao.xyz" title="www.wujinyao.xyz">邱大佬</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.linuxprobe.com/ || linux" title="https://www.linuxprobe.com/ || linux" rel="noopener" target="_blank">Linux就该这么学</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="/www.lixint.me" title="www.lixint.me">hexo大佬</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -510,7 +588,21 @@
   <span class="author" itemprop="copyrightHolder">Divine</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">3k</span>
+  
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">3 分钟</span>
   
 </div>
 
@@ -636,6 +728,29 @@
   
 
   
+  
+  <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://836903440.github.io/tags/index.html";
+    this.page.identifier = "tags/index.html";
+    this.page.title = 'tags';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
 
 
   
@@ -674,5 +789,12 @@
 
   
 
+
+#src默认访问E:\blog\jessica\themes\next\source\js
+  
+  
+
+    <script type="text/javascript" src="/js/love.js"></script>
+  
 </body>
 </html>
