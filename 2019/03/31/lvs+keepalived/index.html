@@ -147,18 +147,18 @@
 
 
 
-  <meta name="description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ LB调度器关闭firewalld与selinux12$ systemctl stop firewalld &amp;amp;&amp;amp; sy">
+  <meta name="description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ &amp;lt;! more &amp;gt; LB调度器关闭firewalld与selinux12$ systemctl stop firewal">
 <meta name="keywords" content="LVS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="lvs+keepalived高可用架构">
 <meta property="og:url" content="https://836903440.github.io/2019/03/31/lvs+keepalived/index.html">
 <meta property="og:site_name" content="Divine">
-<meta property="og:description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ LB调度器关闭firewalld与selinux12$ systemctl stop firewalld &amp;amp;&amp;amp; sy">
+<meta property="og:description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ &amp;lt;! more &amp;gt; LB调度器关闭firewalld与selinux12$ systemctl stop firewal">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-20T11:16:01.846Z">
+<meta property="og:updated_time" content="2019-04-20T12:32:12.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lvs+keepalived高可用架构">
-<meta name="twitter:description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ LB调度器关闭firewalld与selinux12$ systemctl stop firewalld &amp;amp;&amp;amp; sy">
+<meta name="twitter:description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ &amp;lt;! more &amp;gt; LB调度器关闭firewalld与selinux12$ systemctl stop firewal">
 
 
 
@@ -272,23 +272,6 @@
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-tags">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -470,7 +453,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-20 19:16:01" itemprop="dateModified" datetime="2019-04-20T19:16:01+08:00">2019-04-20</time>
+                <time title="修改时间：2019-04-20 20:32:12" itemprop="dateModified" datetime="2019-04-20T20:32:12+08:00">2019-04-20</time>
               
             
           </span>
@@ -516,6 +499,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -564,6 +554,7 @@
 
       
         <p>注意<br>    1、两者使用的系统必须一致，此实验如下图<br>    2、一定要关闭防火墙进行测试<br>    3、一定要通过start/stop来管理keepalived，不要通过restart<br>    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！</p>
+<p>&lt;! more &gt;</p>
 <h2 id="LB调度器"><a href="#LB调度器" class="headerlink" title="LB调度器"></a>LB调度器</h2><h3 id="关闭firewalld与selinux"><a href="#关闭firewalld与selinux" class="headerlink" title="关闭firewalld与selinux"></a>关闭firewalld与selinux</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl stop firewalld &amp;&amp; systemctl <span class="built_in">disable</span> firewalld</span><br><span class="line">$ setenforce 0 &amp;&amp; sed  <span class="string">'s/SELINUX=enforcing/SELINUX=disabled/'</span> /etc/selinux/config</span><br></pre></td></tr></table></figure>
 <h3 id="安装keepalived"><a href="#安装keepalived" class="headerlink" title="安装keepalived"></a>安装keepalived</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install keepalived -y</span><br></pre></td></tr></table></figure>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/keepalived/keepalived.conf</span><br><span class="line">    ! Configuration File <span class="keyword">for</span> keepalived</span><br><span class="line">    global_defs &#123;</span><br><span class="line">        notification_email &#123;   <span class="comment">#监控keepalive,当出现错误时,会发送邮件</span></span><br><span class="line">            acassen@firewall.loc</span><br><span class="line">            failover@firewall.loc</span><br><span class="line">             sysadmin@firewall.loc</span><br><span class="line">           &#125;</span><br><span class="line">           notification_email_from Alexandre.Cassen@firewall.loc</span><br><span class="line">           smtp_server 192.168.200.1</span><br><span class="line">           smtp_connect_timeout 30</span><br><span class="line">           router_id LVS_1</span><br><span class="line">           vrrp_skip_check_adv_addr</span><br><span class="line">           vrrp_strict</span><br><span class="line">           vrrp_garp_interval 0</span><br><span class="line">           vrrp_gna_interval 0</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        vrrp_instance VI_1 &#123;</span><br><span class="line">            state MASTER           <span class="comment">#标记路由器状态</span></span><br><span class="line">            interface ens33         <span class="comment">#绑定ip地址的接口</span></span><br><span class="line">            virtual_router_id 51    <span class="comment">#高可用keepalived组必须一致</span></span><br><span class="line">            priority 150               <span class="comment">#优先级，优先级越高越优，建议相差50CCCC</span></span><br><span class="line">            advert_int 1                <span class="comment">#组播信息发送间隔，两个节点需一致</span></span><br><span class="line">            authentication &#123;          <span class="comment">#keepalive组之间的消息认证</span></span><br><span class="line">                auth_type PASS</span><br><span class="line">                auth_pass 1111</span><br><span class="line">            &#125;</span><br><span class="line">            virtual_ipaddress &#123;     <span class="comment">#设置VIP，两个节点需一致</span></span><br><span class="line">                192.168.211.100/24</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        vrrp_instance VI_2 &#123;</span><br><span class="line">            state BACKUP</span><br><span class="line">            interface ens33       </span><br><span class="line">            virtual_router_id 52   <span class="comment">#多实例下router_id不能一致</span></span><br><span class="line">            priority 50          </span><br><span class="line">            advert_int 1</span><br><span class="line">            authentication &#123;      </span><br><span class="line">                auth_type PASS</span><br><span class="line">                auth_pass 1111</span><br><span class="line">            &#125;</span><br><span class="line">            virtual_ipaddress &#123;</span><br><span class="line">                192.168.1.100/24</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">#设置虚拟ip服务</span></span><br><span class="line">        virtual_server 192.168.211.100 80 &#123;</span><br><span class="line">            delay_loop 6       <span class="comment">#设定检查间隔</span></span><br><span class="line">            lb_algo rr            <span class="comment">#指定LVS算法</span></span><br><span class="line">            lb_kind NAT       <span class="comment">#指定LVS模式</span></span><br><span class="line">            nat_mask 255.255.255.0 </span><br><span class="line">            persistence_timeout 50    <span class="comment">#持久连接设置，会话保持时间</span></span><br><span class="line">            protocol TCP          <span class="comment">#转发协议为TCP</span></span><br><span class="line">        </span><br><span class="line">            real_server 10.0.0.22 80 &#123;   </span><br><span class="line">               weight 1    <span class="comment">#后端实际TCP服务配置</span></span><br><span class="line">            &#125;</span><br><span class="line">         </span><br><span class="line">           real_server 10.0.0.23 80 &#123;</span><br><span class="line">              weight 1</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
@@ -714,7 +705,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -733,7 +724,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -752,7 +745,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -871,7 +866,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">8k</span>
   
 
   
@@ -880,7 +875,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">7 分钟</span>
   
 </div>
 
@@ -893,6 +888,32 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 

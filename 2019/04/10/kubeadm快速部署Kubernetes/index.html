@@ -147,13 +147,19 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Divine">
-<meta property="og:url" content="https://836903440.github.io/index.html">
+  <meta name="description" content="#  kubeadm是官方社区推出的一个用于快速部署kubernetes集群的工具。 这个工具能通过两条指令完成一个kubernetes集群的部署： 12345# 创建一个 Master 节点$ kubeadm init# 将一个 Node 节点加入到当前集群中$ kubeadm join &amp;lt;Master节点的IP和端口 &amp;gt;  1. 安装要求在开始之前，部署Kubernetes集群机器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="kubeadm快速部署Kubernetes">
+<meta property="og:url" content="https://836903440.github.io/2019/04/10/kubeadm快速部署Kubernetes/index.html">
 <meta property="og:site_name" content="Divine">
+<meta property="og:description" content="#  kubeadm是官方社区推出的一个用于快速部署kubernetes集群的工具。 这个工具能通过两条指令完成一个kubernetes集群的部署： 12345# 创建一个 Master 节点$ kubeadm init# 将一个 Node 节点加入到当前集群中$ kubeadm join &amp;lt;Master节点的IP和端口 &amp;gt;  1. 安装要求在开始之前，部署Kubernetes集群机器">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2019/png/304339/1554879719133-691228d5-34d8-4eba-97fc-18190bc1eb4c.png#align=left&display=inline&height=88&name=image.png&originHeight=110&originWidth=668&size=12805&status=done&width=534">
+<meta property="og:updated_time" content="2019-04-20T12:56:27.585Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Divine">
+<meta name="twitter:title" content="kubeadm快速部署Kubernetes">
+<meta name="twitter:description" content="#  kubeadm是官方社区推出的一个用于快速部署kubernetes集群的工具。 这个工具能通过两条指令完成一个kubernetes集群的部署： 12345# 创建一个 Master 节点$ kubeadm init# 将一个 Node 节点加入到当前集群中$ kubeadm join &amp;lt;Master节点的IP和端口 &amp;gt;  1. 安装要求在开始之前，部署Kubernetes集群机器">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2019/png/304339/1554879719133-691228d5-34d8-4eba-97fc-18190bc1eb4c.png#align=left&display=inline&height=88&name=image.png&originHeight=110&originWidth=668&size=12805&status=done&width=534">
 
 
 
@@ -161,7 +167,7 @@
 
   
   
-  <link rel="canonical" href="https://836903440.github.io/">
+  <link rel="canonical" href="https://836903440.github.io/2019/04/10/kubeadm快速部署Kubernetes/">
 
 
 
@@ -171,7 +177,7 @@
   };
 </script>
 
-  <title>Divine</title>
+  <title>kubeadm快速部署Kubernetes | Divine</title>
   
 
 
@@ -219,8 +225,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -257,7 +262,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -268,6 +273,23 @@
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
 
   </li>
         
@@ -372,9 +394,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -384,12 +406,12 @@
 
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  <article class="post post-type-kubernetes" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://836903440.github.io/2019/04/20/kubeadm快速部署kubernetes/">
+    <link itemprop="mainEntityOfPage" href="https://836903440.github.io/2019/04/10/kubeadm快速部署Kubernetes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Divine">
@@ -406,10 +428,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/20/kubeadm快速部署kubernetes/" class="post-title-link" itemprop="url">kubeadm快速部署kubernetes</a>
+          <h1 class="post-title" itemprop="name headline">kubeadm快速部署Kubernetes
+
               
             
           </h1>
@@ -434,12 +454,24 @@
                 
               
 
-              <time title="创建时间：2019-04-20 21:02:55 / 修改时间：21:03:36" itemprop="dateCreated datePublished" datetime="2019-04-20T21:02:55+08:00">2019-04-20</time>
+              <time title="创建时间：2019-04-10 19:15:22" itemprop="dateCreated datePublished" datetime="2019-04-10T19:15:22+08:00">2019-04-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-20 20:56:27" itemprop="dateModified" datetime="2019-04-20T20:56:27+08:00">2019-04-20</time>
               
             
           </span>
@@ -475,8 +507,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/20/kubeadm快速部署kubernetes/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/20/kubeadm快速部署kubernetes/" itemprop="commentCount"></span>
+                <a href="/2019/04/10/kubeadm快速部署Kubernetes/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/10/kubeadm快速部署Kubernetes/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -485,6 +517,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -498,7 +537,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">4.6k</span>
+                <span title="本文字数">4.7k</span>
               
 
               
@@ -532,24 +571,75 @@
       
 
       
-        
-          
-            <p>
-              kubeadm是官方社区推出的一个用于快速部署kubernetes集群的工具。
-这个工具能通过两条指令完成一个kubernetes集群的部署：
-# 创建一个 Master 节点$ kubeadm in
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/20/kubeadm快速部署kubernetes/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+        <p># </p>
+<p>kubeadm是官方社区推出的一个用于快速部署kubernetes集群的工具。</p>
+<p>这个工具能通过两条指令完成一个kubernetes集群的部署：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 创建一个 Master 节点</span><br><span class="line">$ kubeadm init</span><br><span class="line"></span><br><span class="line"># 将一个 Node 节点加入到当前集群中</span><br><span class="line">$ kubeadm join &lt;Master节点的IP和端口 &gt;</span><br></pre></td></tr></table></figure>
+<p><a name="d9bc8687"></a></p>
+<h2 id="1-安装要求"><a href="#1-安装要求" class="headerlink" title="1. 安装要求"></a>1. 安装要求</h2><p>在开始之前，部署Kubernetes集群机器需要满足以下几个条件：</p>
+<ul>
+<li>一台或多台机器，操作系统 CentOS7.x-86_x64</li>
+<li>硬件配置：2GB或更多RAM，2个CPU或更多CPU，硬盘30GB或更多</li>
+<li>集群中所有机器之间网络互通</li>
+<li>可以访问外网，需要拉取镜像</li>
+<li>禁止swap分区</li>
+</ul>
+<p><a name="067b3d5b"></a></p>
+<h2 id="2-学习目标"><a href="#2-学习目标" class="headerlink" title="2. 学习目标"></a>2. 学习目标</h2><ol>
+<li>在所有节点上安装Docker和kubeadm</li>
+<li>部署Kubernetes Master</li>
+<li>部署容器网络插件</li>
+<li>部署 Kubernetes Node，将节点加入Kubernetes集群中</li>
+<li>部署Dashboard Web页面，可视化查看Kubernetes资源</li>
+</ol>
+<p><a name="a9421500"></a></p>
+<h2 id="3-准备环境"><a href="#3-准备环境" class="headerlink" title="3. 准备环境"></a>3. 准备环境</h2><pre><code>Kubernetes 架构图
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">关闭防火墙：</span><br><span class="line">$ systemctl stop firewalld</span><br><span class="line">$ systemctl disable firewalld</span><br><span class="line"></span><br><span class="line">关闭selinux：</span><br><span class="line">$ sed -i &apos;s/enforcing/disabled/&apos; /etc/selinux/config </span><br><span class="line">$ setenforce 0</span><br><span class="line"></span><br><span class="line">关闭swap：</span><br><span class="line">$ swapoff -a  $ 临时</span><br><span class="line">$ vim /etc/fstab  $ 永久</span><br><span class="line"></span><br><span class="line">添加主机名与IP对应关系（记得设置主机名）：</span><br><span class="line">$ cat /etc/hosts</span><br><span class="line">192.168.137.5 k8s-master</span><br><span class="line">192.168.137.100 k8s-node1</span><br><span class="line">192.168.137.101 k8s-node2</span><br><span class="line"></span><br><span class="line">将桥接的IPv4流量传递到iptables的链：</span><br><span class="line">$ cat &gt; /etc/sysctl.d/k8s.conf &lt;&lt; EOF</span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.bridge.bridge-nf-call-iptables = 1</span><br><span class="line">EOF</span><br><span class="line">$ sysctl --system</span><br></pre></td></tr></table></figure>
+<p><a name="e9c11f4d"></a></p>
+<h2 id="4-所有节点安装Docker-kubeadm-kubelet"><a href="#4-所有节点安装Docker-kubeadm-kubelet" class="headerlink" title="4. 所有节点安装Docker/kubeadm/kubelet"></a>4. 所有节点安装Docker/kubeadm/kubelet</h2><p>Kubernetes默认CRI（容器运行时）为Docker，因此先安装Docker。</p>
+<p><a name="53057bed"></a></p>
+<h3 id="4-1-安装Docker"><a href="#4-1-安装Docker" class="headerlink" title="4.1 安装Docker"></a>4.1 安装Docker</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo -O /etc/yum.repos.d/docker-ce.repo</span><br><span class="line">$ yum -y install docker-ce-18.06.1.ce-3.el7</span><br><span class="line">$ systemctl enable docker &amp;&amp; systemctl start docker</span><br><span class="line">$ docker --version</span><br><span class="line">Docker version 18.06.1-ce, build e68fc7a</span><br></pre></td></tr></table></figure>
+<p><a name="5f610077"></a></p>
+<h3 id="4-2-添加阿里云YUM软件源"><a href="#4-2-添加阿里云YUM软件源" class="headerlink" title="4.2 添加阿里云YUM软件源"></a>4.2 添加阿里云YUM软件源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ cat &gt; /etc/yum.repos.d/kubernetes.repo &lt;&lt; EOF</span><br><span class="line">[kubernetes]</span><br><span class="line">name=Kubernetes</span><br><span class="line">baseurl=https://mirrors.aliyun.com/kubernetes/yum/repos/kubernetes-el7-x86_64</span><br><span class="line">enabled=1</span><br><span class="line">gpgcheck=1</span><br><span class="line">repo_gpgcheck=1</span><br><span class="line">gpgkey=https://mirrors.aliyun.com/kubernetes/yum/doc/yum-key.gpg https://mirrors.aliyun.com/kubernetes/yum/doc/rpm-package-key.gpg</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+<p><a name="d581ebe2"></a></p>
+<h3 id="4-3-安装kubeadm，kubelet和kubectl"><a href="#4-3-安装kubeadm，kubelet和kubectl" class="headerlink" title="4.3 安装kubeadm，kubelet和kubectl"></a>4.3 安装kubeadm，kubelet和kubectl</h3><p>由于版本更新频繁，这里指定版本号部署：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ yum install -y kubelet-1.13.3 kubeadm-1.13.3 kubectl-1.13.3</span><br><span class="line">$ systemctl enable kubelet</span><br><span class="line">#kubeadm：初始化Cluster</span><br><span class="line">#kubelet：运行在Cluster上的所有节点，启动Pod和容器</span><br><span class="line">#kubectl：Kubernetes命令行工具</span><br></pre></td></tr></table></figure>
+<p><a name="2ab38ac1"></a></p>
+<h2 id="5-部署Kubernetes-Master"><a href="#5-部署Kubernetes-Master" class="headerlink" title="5. 部署Kubernetes Master"></a>5. 部署Kubernetes Master</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ kubeadm init \</span><br><span class="line">  --apiserver-advertise-address=192.168.137.5 \</span><br><span class="line">  --image-repository registry.aliyuncs.com/google_containers \</span><br><span class="line">  --kubernetes-version v1.13.3 \</span><br><span class="line">  --service-cidr=10.1.0.0/16\</span><br><span class="line">  --pod-network-cidr=10.244.0.0/16</span><br><span class="line"> </span><br><span class="line"> #--apiserver-advertise-address=192.168.137.5：指定Master的哪个interface与Cluster的其他节点通信，如果不指定，则自动选择有默认GW的interface</span><br><span class="line"> #--pod-network-cidr=10.244.137.0/16：Pod网络范围，为了使用flannel方案，则必须设置此网段的CIDR</span><br><span class="line"> 1、kubeadm执行初始化检查</span><br><span class="line"> 2、生成token和证书</span><br><span class="line"> 3、生成KubeConfig文件，Kubelet需要用这个文件与Master通信</span><br><span class="line"> 4、安装Master组件，会从Google的Regisry下载组件的Dokcer镜像</span><br><span class="line"> 5、安装附加组件kube-proxy和kube-dns</span><br><span class="line"> 6、Kubernets初始化成功</span><br><span class="line"> </span><br><span class="line"> ！！ kubectl get pods -n kube-system检测镜像是否下载成功</span><br><span class="line"> ！！ kubectl delete pods kube-flannel-ds-amd64-s5t56 -n kube-system</span><br></pre></td></tr></table></figure>
+<p>由于默认拉取镜像地址k8s.gcr.io国内无法访问，这里指定阿里云镜像仓库地址。</p>
+<p>使用kubectl工具：<br>推荐使用普通用户执行，root用户有些问题</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p <span class="variable">$HOME</span>/.kube</span><br><span class="line">sudo cp -i /etc/kubernetes/admin.conf <span class="variable">$HOME</span>/.kube/config</span><br><span class="line">sudo chown $(id -u):$(id -g) <span class="variable">$HOME</span>/.kube/config</span><br><span class="line">$ kubectl get nodes</span><br></pre></td></tr></table></figure>
+<p><a name="72a0eda4"></a></p>
+<h2 id="6-安装Pod网络插件（CNI）"><a href="#6-安装Pod网络插件（CNI）" class="headerlink" title="6. 安装Pod网络插件（CNI）"></a>6. 安装Pod网络插件（CNI）</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/a70459be0084506e4ec919aa1c114638878db11b/Documentation/kube-flannel.yml</span><br></pre></td></tr></table></figure>
+<p>确保能够访问到quay.io这个registery。</p>
+<p><a name="fe838581"></a></p>
+<h2 id="7-加入Kubernetes-Node"><a href="#7-加入Kubernetes-Node" class="headerlink" title="7. 加入Kubernetes Node"></a>7. 加入Kubernetes Node</h2><p>在node上执行！！！！！！！！！！！使用kubectl get node查看<br>向集群添加新节点，执行在kubeadm init输出（master上）的kubeadm join命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$  kubeadm join 192.168.137.5:6443 --token hm2vby.27zp6mugvhaio2yu --discovery-token-ca-cert-hash sha256:4ae8da8f9c9319cb7980ea8f91b93baca34d77be67bcb35c89ef7faffae2bcbc</span><br><span class="line">#使用--node-name [string] 指定加入kubernetes集群的主机名</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.nlark.com/yuque/0/2019/png/304339/1554879719133-691228d5-34d8-4eba-97fc-18190bc1eb4c.png#align=left&amp;display=inline&amp;height=88&amp;name=image.png&amp;originHeight=110&amp;originWidth=668&amp;size=12805&amp;status=done&amp;width=534" alt="image.png"><br></p>
+<p><a name="03b77485"></a></p>
+<h2 id="8-测试kubernetes集群"><a href="#8-测试kubernetes集群" class="headerlink" title="8. 测试kubernetes集群"></a>8. 测试kubernetes集群</h2><p>在Kubernetes集群中创建一个pod，验证是否正常运行：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl create deployment nginx --image=nginx</span><br><span class="line">$ kubectl expose deployment nginx --port=80 --type=NodePort</span><br><span class="line">$ kubectl get pod,svc</span><br></pre></td></tr></table></figure>
+<p>访问地址：<a href="http://NodeIP" target="_blank" rel="noopener">http://NodeIP</a>:Port</p>
+<p><a name="51bce07d"></a></p>
+<h2 id="9-部署-Dashboard"><a href="#9-部署-Dashboard" class="headerlink" title="9. 部署 Dashboard"></a>9. 部署 Dashboard</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml</span><br></pre></td></tr></table></figure>
+<p>默认镜像国内无法访问，修改镜像地址为： lizhenliang/kubernetes-dashboard-amd64:v1.10.1</p>
+<p>默认Dashboard只能集群内部访问，修改Service为NodePort类型，暴露到外部：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">kind: Service</span><br><span class="line">apiVersion: v1</span><br><span class="line">metadata:</span><br><span class="line">  labels:</span><br><span class="line">    k8s-app: kubernetes-dashboard</span><br><span class="line">  name: kubernetes-dashboard</span><br><span class="line">  namespace: kube-system</span><br><span class="line">spec:</span><br><span class="line">  type: NodePort</span><br><span class="line">  ports:</span><br><span class="line">    - port: 443</span><br><span class="line">      targetPort: 8443</span><br><span class="line">      nodePort: 30001</span><br><span class="line">  selector:</span><br><span class="line">    k8s-app: kubernetes-dashboard</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl apply -f kubernetes-dashboard.yaml</span><br></pre></td></tr></table></figure>
+<p>访问地址：<a href="http://NodeIP:30001" target="_blank" rel="noopener">http://NodeIP:30001</a></p>
+<p>创建service account并绑定默认cluster-admin管理员集群角色：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ kubectl create serviceaccount dashboard-admin -n kube-system</span><br><span class="line">$ kubectl create clusterrolebinding dashboard-admin --clusterrole=cluster-admin --serviceaccount=kube-system:dashboard-admin</span><br><span class="line">$ kubectl describe secrets -n kube-system $(kubectl -n kube-system get secret | awk &apos;/dashboard-admin/&#123;print $1&#125;&apos;)</span><br></pre></td></tr></table></figure>
+<p>使用输出的token登录Dashboard。</p>
+<blockquote>
+<p><a name="d1ba682b"></a></p>
+</blockquote>
+<h4 id="部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程："><a href="#部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程：" class="headerlink" title="部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程："></a>部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程：</h4><blockquote>
+<p><a name="0e466adc"></a></p>
+</blockquote>
+<h5 id="云盘地址：https-pan-baidu-com-s-1INns0FCY89rV4eAVwZedow"><a href="#云盘地址：https-pan-baidu-com-s-1INns0FCY89rV4eAVwZedow" class="headerlink" title="云盘地址：https://pan.baidu.com/s/1INns0FCY89rV4eAVwZedow"></a>云盘地址：<a href="https://pan.baidu.com/s/1INns0FCY89rV4eAVwZedow" target="_blank" rel="noopener">https://pan.baidu.com/s/1INns0FCY89rV4eAVwZedow</a></h5><blockquote>
+<p><a name="5020168f"></a></p>
+</blockquote>
+<h5 id="在线版：https-ke-qq-com-course-266656"><a href="#在线版：https-ke-qq-com-course-266656" class="headerlink" title="在线版：https://ke.qq.com/course/266656"></a>在线版：<a href="https://ke.qq.com/course/266656" target="_blank" rel="noopener">https://ke.qq.com/course/266656</a></h5>
       
     </div>
 
@@ -565,6 +655,30 @@
       
     
     
+      <div>
+        <div id="reward-container">
+  <div>求大佬赏饭，都快吃不起了</div>
+  <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+
+    
+      
+      
+        
+      
+      <div style="display: inline-block">
+        <img src="/images/wechatpay.png" alt="Divine 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
@@ -572,206 +686,32 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-tags" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://836903440.github.io/2019/04/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Divine">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/jessica.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Divine">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/04/20/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
+              <a href="/2019/03/31/lvs+keepalived/" rel="next" title="lvs+keepalived高可用架构">
+                <i class="fa fa-chevron-left"></i> lvs+keepalived高可用架构
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
+              <a href="/2019/04/20/hello-world/" rel="prev" title="Hello World">
+                Hello World <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-20 10:21:15 / 修改时间：13:21:38" itemprop="dateCreated datePublished" datetime="2019-04-20T10:21:15+08:00">2019-04-20</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/20/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/04/20/hello-world/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">430</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">1 分钟</span>
-              
-            </div>
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>
-              Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pro
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/04/20/hello-world/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -781,238 +721,22 @@
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://836903440.github.io/2019/03/31/lvs+keepalived/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Divine">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/jessica.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Divine">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/31/lvs+keepalived/" class="post-title-link" itemprop="url">lvs+keepalived高可用架构</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-03-31 13:45:02" itemprop="dateCreated datePublished" datetime="2019-03-31T13:45:02+08:00">2019-03-31</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-20 20:32:12" itemprop="dateModified" datetime="2019-04-20T20:32:12+08:00">2019-04-20</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/HA/" itemprop="url" rel="index"><span itemprop="name">HA</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/03/31/lvs+keepalived/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/03/31/lvs+keepalived/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-symbolscount">
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">本文字数：</span>
-                
-                <span title="本文字数">2.6k</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">2 分钟</span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>
-              注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑
-              ...
-            </p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/31/lvs+keepalived/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1032,8 +756,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1090,9 +823,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1160,6 +891,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-安装要求"><span class="nav-number">1.</span> <span class="nav-text">1. 安装要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-学习目标"><span class="nav-number">2.</span> <span class="nav-text">2. 学习目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-准备环境"><span class="nav-number">3.</span> <span class="nav-text">3. 准备环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-所有节点安装Docker-kubeadm-kubelet"><span class="nav-number">4.</span> <span class="nav-text">4. 所有节点安装Docker/kubeadm/kubelet</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-安装Docker"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 安装Docker</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-2-添加阿里云YUM软件源"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 添加阿里云YUM软件源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-安装kubeadm，kubelet和kubectl"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 安装kubeadm，kubelet和kubectl</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-部署Kubernetes-Master"><span class="nav-number">5.</span> <span class="nav-text">5. 部署Kubernetes Master</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-安装Pod网络插件（CNI）"><span class="nav-number">6.</span> <span class="nav-text">6. 安装Pod网络插件（CNI）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-加入Kubernetes-Node"><span class="nav-number">7.</span> <span class="nav-text">7. 加入Kubernetes Node</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8-测试kubernetes集群"><span class="nav-number">8.</span> <span class="nav-text">8. 测试kubernetes集群</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9-部署-Dashboard"><span class="nav-number">9.</span> <span class="nav-text">9. 部署 Dashboard</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程："><span class="nav-number">9.0.1.</span> <span class="nav-text">部署很简单！但你可能还有很多背后细节不清楚？详细步骤细节，请查看视频教程：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#云盘地址：https-pan-baidu-com-s-1INns0FCY89rV4eAVwZedow"><span class="nav-number">9.0.1.1.</span> <span class="nav-text">云盘地址：https://pan.baidu.com/s/1INns0FCY89rV4eAVwZedow</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#在线版：https-ke-qq-com-course-266656"><span class="nav-number">9.0.1.2.</span> <span class="nav-text">在线版：https://ke.qq.com/course/266656</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -1332,6 +1080,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -1350,9 +1102,28 @@
   <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://836903440.github.io/2019/04/10/kubeadm快速部署Kubernetes/";
+    this.page.identifier = "2019/04/10/kubeadm快速部署Kubernetes/";
+    this.page.title = 'kubeadm快速部署Kubernetes';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   
