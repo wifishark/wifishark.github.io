@@ -154,7 +154,7 @@ template {
 body {
   position: relative;
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #f5f7f9;
@@ -166,7 +166,7 @@ body {
 }
 @media (min-width: 1200px) {
   body {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 h1,
@@ -1301,7 +1301,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1704,9 +1704,9 @@ pre .javascript .function {
   margin: 0;
   padding: 0 15px;
   border-radius: 5px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
   color: #fff;
   background: #f44336;
   letter-spacing: normal;
@@ -1919,7 +1919,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #22ff85;
+  background: #660640;
 }
 .feed-link,
 .chat {
@@ -2490,7 +2490,7 @@ ul.breadcrumb {
   margin: 1em 0;
   padding: 0 2em;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
 }
 ul.breadcrumb li {
   display: inline;
@@ -2942,4 +2942,20 @@ ul.breadcrumb li+li:last-child {
 }
 #以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images .site-meta {
   background: #f03;
+}
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images .highlight,
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images .highlight,
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images code,
+#以后把图片放在主题目录的images下E:\blog\jessica\themes\next\source\images pre {
+  border: 1px solid #d6d6d6;
 }
