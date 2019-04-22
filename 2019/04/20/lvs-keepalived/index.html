@@ -147,6 +147,15 @@
 
 
 
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "5a158cba"
+    });
+  daovoice('update');
+  </script>
+
   <meta name="description" content="注意    1、两者使用的系统必须一致，此实验如下图    2、一定要关闭防火墙进行测试    3、一定要通过start/stop来管理keepalived，不要通过restart    4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ LB调度器关闭firewalld与selinux12$ systemctl stop firewalld &amp;amp;&amp;amp; sy">
 <meta name="keywords" content="lvs">
 <meta property="og:type" content="article">
@@ -504,7 +513,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
       
       
 
