@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[lvs+keepalived]]></title>
-    <url>%2F2019%2F04%2F20%2Flvs-keepalived%2F</url>
-    <content type="text"><![CDATA[注意 1、两者使用的系统必须一致，此实验如下图 2、一定要关闭防火墙进行测试 3、一定要通过start/stop来管理keepalived，不要通过restart 4、VIP绑定的那个物理网卡一定要使用仅主机模式，不要使用nat模式！！！！！ LB调度器关闭firewalld与selinux12$ systemctl stop firewalld &amp;&amp; systemctl disable firewalld$ setenforce 0 &amp;&amp; sed 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config 安装keepalived1$ yum install keepalived -y Generate static files1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465$ vim /etc/keepalived/keepalived.conf ! Configuration File for keepalived global_defs &#123; notification_email &#123; #监控keepalive,当出现错误时,会发送邮件 acassen@firewall.loc failover@firewall.loc sysadmin@firewall.loc &#125; notification_email_from Alexandre.Cassen@firewall.loc smtp_server 192.168.200.1 smtp_connect_timeout 30 router_id LVS_1 vrrp_skip_check_adv_addr vrrp_strict vrrp_garp_interval 0 vrrp_gna_interval 0 &#125; vrrp_instance VI_1 &#123; state MASTER #标记路由器状态 interface ens33 #绑定ip地址的接口 virtual_router_id 51 #高可用keepalived组必须一致 priority 150 #优先级，优先级越高越优，建议相差50CCCC advert_int 1 #组播信息发送间隔，两个节点需一致 authentication &#123; #keepalive组之间的消息认证 auth_type PASS auth_pass 1111 &#125; virtual_ipaddress &#123; #设置VIP，两个节点需一致 192.168.211.100/24 &#125; &#125; vrrp_instance VI_2 &#123; state BACKUP interface ens33 virtual_router_id 52 #多实例下router_id不能一致 priority 50 advert_int 1 authentication &#123; auth_type PASS auth_pass 1111 &#125; virtual_ipaddress &#123; 192.168.1.100/24 &#125; &#125; #设置虚拟ip服务 virtual_server 192.168.211.100 80 &#123; delay_loop 6 #设定检查间隔 lb_algo rr #指定LVS算法 lb_kind NAT #指定LVS模式 nat_mask 255.255.255.0 persistence_timeout 50 #持久连接设置，会话保持时间 protocol TCP #转发协议为TCP real_server 10.0.0.22 80 &#123; weight 1 #后端实际TCP服务配置 &#125; real_server 10.0.0.23 80 &#123; weight 1 &#125; &#125; Deploy to remote sites1$ hexo deploy]]></content>
+    <title><![CDATA[CDN]]></title>
+    <url>%2F2019%2F02%2F03%2FCDN%2F</url>
+    <content type="text"><![CDATA[原理图当用户请求一个文件时，cdn工作过程如下 DNS迭代查询local DNS 当地local DNS递归查询服务器的GSLB（全局负载均衡） GSLB根据local DNS返回最佳CDN接入节点IP给User 用户得到最佳CDN接入点IP 如果该节点没有用户想要获取的内容，则通过内部路由访问上一个节点，直到找到文件或到达源站为止 CDN接入点缓存该数据，下次请求文件时可以直接返回 参考资料：腾讯云CDN，漫画讲解CDN，CDN技术详解]]></content>
       <categories>
-        <category>lvs</category>
+        <category>网络</category>
       </categories>
       <tags>
-        <tag>lvs</tag>
+        <tag>CDN</tag>
+        <tag>网络</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F04%2F20%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
     <title><![CDATA[kubeadm快速部署kubernetes]]></title>
