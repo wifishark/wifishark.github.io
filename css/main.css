@@ -1919,7 +1919,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #78e31d;
+  background: #bdffb8;
 }
 .feed-link,
 .chat {
@@ -2933,4 +2933,10 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+* {
+  cursor: url("/images/mouse1.ico"), auto !important;
+}
+:active {
+  cursor: url("/images/mouse2.ico"), auto !important;
 }
